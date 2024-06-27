@@ -1,9 +1,12 @@
 import esbuild from 'esbuild';
-import fs, { writeFile } from 'fs';
+import fs from 'fs';
 import path from 'path';
-import { rimrafSync } from 'rimraf';
+import rimraf from 'rimraf';
 import mkdir from 'make-dir';
 import { fileURLToPath } from 'url';
+
+const rimrafSync = rimraf.sync;
+
 import { execSync } from 'child_process';
 
 // -------------------------------
