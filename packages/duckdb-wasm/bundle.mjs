@@ -1,13 +1,13 @@
 import esbuild from 'esbuild';
 import fs from 'fs';
 import path from 'path';
-import rimraf from 'rimraf';
 import mkdir from 'make-dir';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
+import rimraf from 'rimraf';
 
 const rimrafSync = rimraf.sync;
 
-import { execSync } from 'child_process';
 
 // -------------------------------
 // Current bundling strategy
